@@ -1,0 +1,27 @@
+Apr 11, 2025 19:58:09.569 [0xffffb94dfb08] INFO - Plex Tuner Service v1.41.6.9685-d301f511a - Docker Docker Container (LinuxServer.io) aarch64 - build: 
+Apr 11, 2025 19:58:09.569 [0xffffb94dfb08] INFO - Linux version: 6.10.14-linuxkit (#1 SMP Thu Mar 20 16:32:56 UTC 2025), language: en-US
+Apr 11, 2025 19:58:09.569 [0xffffb94dfb08] INFO - Processor Unknown architecture
+Apr 11, 2025 19:58:09.569 [0xffffb94dfb08] INFO - /usr/lib/plexmediaserver/Plex Tuner Service /usr/lib/plexmediaserver/Resources/Tuner/Private /usr/lib/plexmediaserver/Resources/Tuner/Shared 1.41.6.9685-d301f511a 32600
+Apr 11, 2025 19:58:09.557 [0xffffbb3ff890] INFO - [I] broker_t::start...
+Apr 11, 2025 19:58:09.559 [0xffffbb3ff890] INFO - [I] device_manager_t::init.
+Apr 11, 2025 19:58:09.559 [0xffffbb3ff890] INFO - [I] device_manager_t::init. Initialize provider manager
+Apr 11, 2025 19:58:09.559 [0xffffbb3ff890] INFO - [I] device_manager_t::init. Initialize all device auxes
+Apr 11, 2025 19:58:09.559 [0xffffbb3ff890] INFO - [I] dvb_device_factory_t::get_aux_list
+Apr 11, 2025 19:58:09.559 [0xffffbb3ff890] INFO - [I] tvbutler_aux_t::init
+Apr 11, 2025 19:58:09.560 [0xffffbb3ff890] INFO - [I] web_server_t::start. Starting web server on port 32600
+Apr 11, 2025 19:58:18.337 [0xffffb91b6b08] INFO - [I] web_service_t::process_device_discovery
+Apr 11, 2025 19:58:18.338 [0xffffb91b6b08] INFO - [I] device_reactor_t::get_device_list ()
+Apr 11, 2025 19:58:20.403 [0xffffb91b6b08] INFO - [I] SAT2IP - discover_satip_servers(): no servers found
+Apr 11, 2025 19:58:20.818 [0xffffb91b6b08] INFO - [I] v4l::DeviceGetList_impl. getting v4l device list
+Apr 11, 2025 19:58:20.823 [0xffffb91b6b08] INFO - [I] onetv_factory::DeviceGetListEx >>
+Apr 11, 2025 19:58:20.824 [0xffffb91b6b08] WARN - [W] onetv_factory::DeviceGetListEx. libusb_init returned an error -99
+Apr 11, 2025 20:01:15.350 [0xffffbb3ff890] INFO - Received SIGINT: Interrupt from keyboard.
+Apr 11, 2025 20:01:15.383 [0xffffbb3ff890] INFO - [I] device_manager_t::term
+Apr 11, 2025 20:01:15.383 [0xffffbb3ff890] INFO - [I] device_manager_t::term. Stop all devices
+Apr 11, 2025 20:01:15.383 [0xffffbb3ff890] INFO - [I] device_manager_t::term. Shut down all device auxes
+Apr 11, 2025 20:01:15.383 [0xffffbb3ff890] INFO - [I] tvbutler_aux_t::term
+Apr 11, 2025 20:01:15.385 [0xffffbb3ff890] INFO - [I] web_server_t::stop. Web server is stopped
+Apr 11, 2025 20:01:15.385 [0xffffbb3ff890] INFO - [I] device_manager_t::term
+Apr 11, 2025 20:01:15.385 [0xffffbb3ff890] INFO - [I] device_manager_t::term. Stop all devices
+Apr 11, 2025 20:01:15.385 [0xffffbb3ff890] INFO - [I] device_manager_t::term. Shut down all device auxes
+Apr 11, 2025 20:01:15.385 [0xffffbb3ff890] INFO - [I] broker_t::shutdown. Shutdown is completed.

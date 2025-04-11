@@ -1,17 +1,27 @@
-Apr 11, 2025 19:25:20.073 [0xffffa30dfb08] INFO - Plex Tuner Service v1.41.6.9685-d301f511a - Docker Docker Container (LinuxServer.io) aarch64 - build: 
-Apr 11, 2025 19:25:20.073 [0xffffa30dfb08] INFO - Linux version: 6.10.14-linuxkit (#1 SMP Thu Mar 20 16:32:56 UTC 2025), language: en-US
-Apr 11, 2025 19:25:20.073 [0xffffa30dfb08] INFO - Processor Unknown architecture
-Apr 11, 2025 19:25:20.073 [0xffffa30dfb08] INFO - /usr/lib/plexmediaserver/Plex Tuner Service /usr/lib/plexmediaserver/Resources/Tuner/Private /usr/lib/plexmediaserver/Resources/Tuner/Shared 1.41.6.9685-d301f511a 32600
-Apr 11, 2025 19:25:20.064 [0xffffa53a5890] INFO - [I] broker_t::start...
-Apr 11, 2025 19:25:20.065 [0xffffa53a5890] INFO - [I] device_manager_t::init.
-Apr 11, 2025 19:25:20.065 [0xffffa53a5890] INFO - [I] device_manager_t::init. Initialize provider manager
-Apr 11, 2025 19:25:20.065 [0xffffa53a5890] INFO - [I] device_manager_t::init. Initialize all device auxes
-Apr 11, 2025 19:25:20.065 [0xffffa53a5890] INFO - [I] dvb_device_factory_t::get_aux_list
-Apr 11, 2025 19:25:20.065 [0xffffa53a5890] INFO - [I] tvbutler_aux_t::init
-Apr 11, 2025 19:25:20.069 [0xffffa53a5890] INFO - [I] web_server_t::start. Starting web server on port 32600
-Apr 11, 2025 19:25:29.025 [0xffffa2dd6b08] INFO - [I] web_service_t::process_device_discovery
-Apr 11, 2025 19:25:29.025 [0xffffa2dd6b08] INFO - [I] device_reactor_t::get_device_list ()
-Apr 11, 2025 19:25:31.052 [0xffffa2dd6b08] INFO - [I] SAT2IP - discover_satip_servers(): no servers found
-Apr 11, 2025 19:25:31.467 [0xffffa2dd6b08] INFO - [I] v4l::DeviceGetList_impl. getting v4l device list
-Apr 11, 2025 19:25:31.467 [0xffffa2dd6b08] INFO - [I] onetv_factory::DeviceGetListEx >>
-Apr 11, 2025 19:25:31.468 [0xffffa2dd6b08] WARN - [W] onetv_factory::DeviceGetListEx. libusb_init returned an error -99
+Apr 11, 2025 20:09:43.735 [0xffff860dfb08] INFO - Plex Tuner Service v1.41.6.9685-d301f511a - Docker Docker Container (LinuxServer.io) aarch64 - build: 
+Apr 11, 2025 20:09:43.735 [0xffff860dfb08] INFO - Linux version: 6.10.14-linuxkit (#1 SMP Thu Mar 20 16:32:56 UTC 2025), language: en-US
+Apr 11, 2025 20:09:43.735 [0xffff860dfb08] INFO - Processor Unknown architecture
+Apr 11, 2025 20:09:43.736 [0xffff860dfb08] INFO - /usr/lib/plexmediaserver/Plex Tuner Service /usr/lib/plexmediaserver/Resources/Tuner/Private /usr/lib/plexmediaserver/Resources/Tuner/Shared 1.41.6.9685-d301f511a 32600
+Apr 11, 2025 20:09:43.725 [0xffff883fd890] INFO - [I] broker_t::start...
+Apr 11, 2025 20:09:43.726 [0xffff883fd890] INFO - [I] device_manager_t::init.
+Apr 11, 2025 20:09:43.726 [0xffff883fd890] INFO - [I] device_manager_t::init. Initialize provider manager
+Apr 11, 2025 20:09:43.726 [0xffff883fd890] INFO - [I] device_manager_t::init. Initialize all device auxes
+Apr 11, 2025 20:09:43.726 [0xffff883fd890] INFO - [I] dvb_device_factory_t::get_aux_list
+Apr 11, 2025 20:09:43.726 [0xffff883fd890] INFO - [I] tvbutler_aux_t::init
+Apr 11, 2025 20:09:43.730 [0xffff883fd890] INFO - [I] web_server_t::start. Starting web server on port 32600
+Apr 11, 2025 20:09:52.728 [0xffff85dd6b08] INFO - [I] web_service_t::process_device_discovery
+Apr 11, 2025 20:09:52.728 [0xffff85dd6b08] INFO - [I] device_reactor_t::get_device_list ()
+Apr 11, 2025 20:09:54.805 [0xffff85dd6b08] INFO - [I] SAT2IP - discover_satip_servers(): no servers found
+Apr 11, 2025 20:09:55.214 [0xffff85dd6b08] INFO - [I] v4l::DeviceGetList_impl. getting v4l device list
+Apr 11, 2025 20:09:55.219 [0xffff85dd6b08] INFO - [I] onetv_factory::DeviceGetListEx >>
+Apr 11, 2025 20:09:55.219 [0xffff85dd6b08] WARN - [W] onetv_factory::DeviceGetListEx. libusb_init returned an error -99
+Apr 11, 2025 20:13:06.077 [0xffff883fd890] INFO - Received SIGINT: Interrupt from keyboard.
+Apr 11, 2025 20:13:06.116 [0xffff883fd890] INFO - [I] device_manager_t::term
+Apr 11, 2025 20:13:06.116 [0xffff883fd890] INFO - [I] device_manager_t::term. Stop all devices
+Apr 11, 2025 20:13:06.116 [0xffff883fd890] INFO - [I] device_manager_t::term. Shut down all device auxes
+Apr 11, 2025 20:13:06.116 [0xffff883fd890] INFO - [I] tvbutler_aux_t::term
+Apr 11, 2025 20:13:06.120 [0xffff883fd890] INFO - [I] web_server_t::stop. Web server is stopped
+Apr 11, 2025 20:13:06.120 [0xffff883fd890] INFO - [I] device_manager_t::term
+Apr 11, 2025 20:13:06.120 [0xffff883fd890] INFO - [I] device_manager_t::term. Stop all devices
+Apr 11, 2025 20:13:06.120 [0xffff883fd890] INFO - [I] device_manager_t::term. Shut down all device auxes
+Apr 11, 2025 20:13:06.121 [0xffff883fd890] INFO - [I] broker_t::shutdown. Shutdown is completed.

@@ -6,13 +6,18 @@ services:
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - MYSQL_DATABASE=${MYSQL_DATABASE}
-      - MYSQL_USER=${MYSQL_USER}
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${kkkppp}
+      - MYSQL_DATABASE=${kozy}
+      - MYSQL_USER=${pkhan}
+      - MYSQL_PASSWORD=${kkkppp}
     volumes:
       - ./mariadb/config:/config
       - ./mariadb/data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
     restart: unless-stopped
 
   bookstack:
@@ -21,15 +26,16 @@ services:
       - PUID=${PUID}
       - PGID=${PGID}
       - DB_HOST=mariadb
-      - DB_USER=${MYSQL_USER}
-      - DB_PASS=${MYSQL_PASSWORD}
-      - DB_DATABASE=${MYSQL_DATABASE}
+      - DB_USER=${pkhan}
+      - DB_PASS=${kkkppp}
+      - DB_DATABASE=${kozy}
     volumes:
       - ./bookstack/config:/config
     depends_on:
-      - mariadb
+      mariadb:
+        condition: service_healthy
     ports:
-      - "6875:80"
+      - "6876:80"
     restart: unless-stopped
 
   sonarr:
