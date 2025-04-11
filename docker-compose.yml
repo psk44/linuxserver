@@ -1,0 +1,97 @@
+version: "3"
+
+services:
+  mariadb:
+    image: lscr.io/linuxserver/mariadb:latest
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    volumes:
+      - ./mariadb/config:/config
+      - ./mariadb/data:/var/lib/mysql
+    restart: unless-stopped
+
+  bookstack:
+    image: lscr.io/linuxserver/bookstack:latest
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - DB_HOST=mariadb
+      - DB_USER=${MYSQL_USER}
+      - DB_PASS=${MYSQL_PASSWORD}
+      - DB_DATABASE=${MYSQL_DATABASE}
+    volumes:
+      - ./bookstack/config:/config
+    depends_on:
+      - mariadb
+    ports:
+      - "6875:80"
+    restart: unless-stopped
+
+  sonarr:
+    image: lscr.io/linuxserver/sonarr:latest
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+    volumes:
+      - ./sonarr/config:/config
+      - ./data/downloads:/downloads
+      - ./data/media/tvshows:/tv
+    ports:
+      - "8989:8989"
+    restart: unless-stopped
+
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+    volumes:
+      - ./radarr/config:/config
+      - ./data/downloads:/downloads
+      - ./data/media/movies:/movies
+    ports:
+      - "7878:7878"
+    restart: unless-stopped
+
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+    volumes:
+      - ./qbittorrent/config:/config
+      - ./data/downloads:/downloads
+    ports:
+      - "8080:8080"
+      - "6881:6881"
+      - "6881:6881/udp"
+    restart: unless-stopped
+
+  plex:
+    image: lscr.io/linuxserver/plex:latest
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+    volumes:
+      - ./plex/config:/config
+      - ./data/media/movies:/movies
+      - ./data/media/tvshows:/tv
+    ports:
+      - "32400:32400"
+    restart: unless-stopped
+
+  nginx:
+    image: lscr.io/linuxserver/nginx:latest
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+    volumes:
+      - ./nginx/config:/config
+    ports:
+      - "80:80"
+    restart: unless-stopped

@@ -1,0 +1,26 @@
+(N) 2025-04-11T19:25:17 - qBittorrent v5.0.4 started. Process ID: 146
+(N) 2025-04-11T19:25:17 - Using config directory: /config/qBittorrent
+(N) 2025-04-11T19:25:17 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2025-04-11T19:25:17 - Peer ID: "-qB5040-"
+(I) 2025-04-11T19:25:17 - HTTP User-Agent: "qBittorrent/5.0.4"
+(I) 2025-04-11T19:25:17 - Distributed Hash Table (DHT) support: ON
+(I) 2025-04-11T19:25:17 - Local Peer Discovery support: ON
+(I) 2025-04-11T19:25:17 - Peer Exchange (PeX) support: ON
+(I) 2025-04-11T19:25:17 - Anonymous mode: OFF
+(I) 2025-04-11T19:25:17 - Encryption support: ON
+(I) 2025-04-11T19:25:17 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2025-04-11T19:25:17 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2025-04-11T19:25:17 - Successfully listening on IP. IP: "172.19.0.4". Port: "TCP/6881"
+(I) 2025-04-11T19:25:17 - Successfully listening on IP. IP: "172.19.0.4". Port: "UTP/6881"
+(I) 2025-04-11T19:25:17 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2025-04-11T19:25:17 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(W) 2025-04-11T19:25:17 - Couldn't load IP geolocation database. Reason: No such file or directory
+(N) 2025-04-11T19:25:17 - Using built-in WebUI.
+(W) 2025-04-11T19:25:17 - Couldn't load WebUI translation for selected locale (C).
+(N) 2025-04-11T19:25:17 - WebUI: Now listening on IP: *, port: 8080
+(I) 2025-04-11T19:25:18 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Tue Apr 1 01:21:37 2025.
+(I) 2025-04-11T19:25:18 - Successfully updated IP geolocation database.
+(I) 2025-04-11T19:25:18 - Detected external IP. IP: "76.178.106.254"
+(W) 2025-04-11T19:27:55 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:192.168.65.1, username: admin
+(W) 2025-04-11T19:28:09 - WebAPI login failure. Reason: invalid credentials, attempt count: 2, IP: ::ffff:192.168.65.1, username: pkpk
+(W) 2025-04-11T19:28:18 - WebAPI login failure. Reason: invalid credentials, attempt count: 3, IP: ::ffff:192.168.65.1, username: admin
